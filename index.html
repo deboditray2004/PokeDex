@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PokeDex</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="pokedex">
+      <div class="main-container">
+        <div class="hinge"></div>
+        <div class="blue-light"></div>
+        <div class="lights">
+          <div class="red"></div>
+          <div class="yellow"></div>
+          <div class="green"></div>
+        </div>
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+        <div class="speakerbars">
+          <div class="speakerbar"></div>
+          <div class="speakerbar"></div>
+          <div class="speakerbar"></div>
+        </div>
+        <div class="screen-border">
+          <div class="corner-triangle"></div>
+          <div class="red-dot-1"></div>
+          <div class="red-dot-2"></div>
+          <div class="screen">
+            <img
+              class="pokemon-picture"
+            />
+          </div>
+        </div>
+        <button class="black-button"></button>
+        <input class="input" type="text" pattern="[a-zA-Z0-9]" placeholder="Id or name"></input>
+      </div>
+      <div class="flap-container">
+        <div class="large-screen">
+          <div class="home-screen">
+            <p>Name: <span id="name"></span> Id: <span id="id"></span></p>
+            <p>Height: <span id="height"></span></p>
+            <p>Weight: <span id="weight"></span></p>
+            <p>Type: <span id="type"></span></p>
+            <p>Weakness: <span id="weakness"></span></p>
+            <p>Immunity: <span id="immunity"></span></p>
+            <p>Ability:- </p>
+            <p>Active: <span id="active"></span></p>
+            <p>Passive: <span id="passive"></span></p>
+          </div>
+        </div>
+        <div class="pokemon-stats-info active">
+          <h3>Stats</h3>
+          <ul class="outer-ul">
+            <li>
+              <ul class="inner-ul">
+                <li data-value="3" class="meter" style="top: 80%;"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <span>HP</span>
+            </li>
+
+            <li>
+              <ul class="inner-ul">
+                <li data-value="3" class="meter" style="top: 80%;"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <span>Atk</span>
+            </li>
+
+            <li>
+              <ul class="inner-ul">
+                <li data-value="3" class="meter" style="top: 80%;"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <span>Def</span>
+            </li>
+            <li>
+              <ul class="inner-ul">
+                <li data-value="4" class="meter" style="top: 73.3333%;"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <span>SAtk</span>
+            </li>
+            <li>
+              <ul class="inner-ul">
+                <li data-value="4" class="meter" style="top: 73.3333%;"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <span>SDef</span>
+            </li>
+            <li>
+              <ul class="inner-ul">
+                <li data-value="3" class="meter" style="top: 80%;"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <span>Spd</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
