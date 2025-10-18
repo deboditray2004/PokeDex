@@ -444,12 +444,25 @@ img.pokemon-picture {
   border-radius: 5px;
   background: var(--screen-dark);
 }
+.home-screen
+{
+  overflow-x: scroll;
+  overflow-y: scroll;
+  /* Hide scrollbar (cross-browser) */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer/Edge */
+}
 
+.home-screen::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
 .home-screen >p
 {
   padding-left: 4%;
   display: none;
 }
+
+
 
 .small-screen-flap {
   display: flex;
@@ -496,6 +509,7 @@ img.pokemon-picture {
   list-style: none;
   padding: 0;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 /* Each stat column */
