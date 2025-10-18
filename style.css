@@ -55,7 +55,7 @@ p {
 
 input {
   width: 100%;
-  font-size: clamp(0.4ch, 2.5vw, 1.2ch);
+  font-size: clamp(0.1ch, 1vw, 1.2ch);
   text-align: center;
   color: var(--screen-dark);
 }
