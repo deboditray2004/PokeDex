@@ -23,7 +23,7 @@ const typeChart = {
 const inputBox=document.querySelector("input");
 inputBox.addEventListener("input", function(event)
 {
-  const allowedCharsRegex = /[^a-zA-Z0-9]/g;
+  const allowedCharsRegex = /[^a-zA-Z0-9♀♂. -]/g;
   const old=inputBox.value;
   const cleaned = old.replace(allowedCharsRegex, "");
   inputBox.value = cleaned;
