@@ -42,7 +42,6 @@ function turnOffHomeScreen()
 }
 function turnOnHomeScreen()
 {
-  currentlyAt="home";
   document.querySelectorAll(".home-screen>p").forEach(p => {
       p.style.display = 'block';
     });
@@ -75,8 +74,8 @@ function setUpHomeScreen(data)
   document.getElementById("active").innerHTML=act_abi;
   document.getElementById("passive").innerHTML=pass_abi;
 
-//get weakness nad immunity
 }
+//get weakness nad immunity
 function get_WI(types)
 {
   const allTypes=Object.keys(typeChart);
@@ -136,10 +135,9 @@ async function getPokemon()
     }
     var data=await response.json();
     console.log(data);
-
+    document.querySelector(".pokemon-picture").src=`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`;
     setUpHomeScreen(data);
     turnOnHomeScreen();
-    document.querySelector(".pokemon-picture").src=`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`;
     fillStats(data);  
   }
   catch(error)
