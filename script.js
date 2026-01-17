@@ -28,6 +28,12 @@ inputBox.addEventListener("input", function(event)
   const cleaned = old.replace(allowedCharsRegex, "");
   inputBox.value = cleaned;
 });
+inputBox.addEventListener("keydown", function(event)
+{
+  if(event.key==="Enter")
+    goBtn.click();
+});
+
 
 //invoking getPokemon on clicking Go
 const goBtn=document.querySelector(".black-button");
