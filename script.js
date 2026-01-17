@@ -126,6 +126,8 @@ async function getPokemon()
   {
     var nameOrId=inputBox.value.toLowerCase();
     nameOrId = nameOrId.replace(/^0+(?=\d)/, "");
+    if(nameOrId==="")
+      return;
     console.log(nameOrId);
     const apiUrl=`https://pokeapi.co/api/v2/pokemon/${nameOrId}`;
     const response=await fetch(apiUrl);
